@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fname">Enter your firstname:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your name"
+            minlength="2" maxlength="20" required pattern="^[a-zA-Z ]{2,20}$">
+        </div>
+        <div>
+            <label for=" ">enter your password:</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+
+        </div>
+        <div>
+            <label for=" ">enter your email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+        </div>
+        <div>
+            <label for=" ">enter your contact:</label>
+            <input type="tel" name="contact" placeholder="Enter your contact no." required>
+
+        </div>
+        <div>
+
+            <lable for=" ">Select your gender</lable>
+            Male<input type="radio" name="gender" value="male" checked>
+            Female<input type="radio" name="gender" value="female">
+        </div>
+        <div>
+            <label for=" ">Select your Qualification</label>
+            <input type="checkbox" name="edu" value="ssc">ssc
+            <input type="checkbox" name="edu" value="hsc">hsc
+            <input type="checkbox" name="edu" value="ug">ug
+            <input type="checkbox" name="edu" value="pg">pg
+        </div>
+        <div>
+            <label for=" ">Select your course</label>
+            <select name="course" required>
+            <option value="course">Select course</option>
+            <option value="React">React</option>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="c++">c++</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Select date</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <label for="">upload yout file</label>
+            <input type="file" name="profile">
+        </div>
+        <div>
+            <label for="">give feedback</label>
+            <textarea name="feedback" cols="30" rows="30"></textarea>
+        </div>
+        <div>
+            <label for="">Course fee</label>
+            <textarea name="text" name="fees" value="10000" readonly></textarea>
+        </div>
+        <input type="color" name="" id="">Color<br>
+        <input type="datetime-local" name="" id="">date<br>
+        <input type="date" name="" id="">date<br>
+        <input type="datetime" name="" id="">date<br>
+        
+    </form>
+</body>
+</html>
